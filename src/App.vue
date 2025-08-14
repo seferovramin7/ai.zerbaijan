@@ -50,7 +50,7 @@ const toggleFaq = (idx) => {
     <section class="section">
       <div class="container hero-surface">
       <div class="hero">
-        <img src="/aizerbaijan.jpg" alt="ai.zerbaijan logo" class="hero-logo" />
+        <img src="/aizerbaijan.jpg" alt="ai.zerbaijan loqo – Azərbaycan dilində AI icması" class="hero-logo" fetchpriority="high" />
         <div>
           <div class="pill" style="margin-bottom:.6rem">
             <span class="icon-circle">✨</span>

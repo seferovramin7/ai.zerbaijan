@@ -38,6 +38,7 @@ const toggleFaq = (idx) => {
         <a href="#about">Haqqımızda</a>
         <a href="#programs">Proqramlar</a>
         <a href="#webinars">Vebinar</a>
+        <a href="articles/">Məqalələr</a>
         <a href="#resources">Resurslar</a>
         <a href="#faq">Suallar</a>
         <a :href="registerUrl" target="_blank" rel="noopener" class="btn primary" style="padding:.55rem .9rem">Qoşul</a>
@@ -61,6 +62,7 @@ const toggleFaq = (idx) => {
           <div style="margin-top:1rem; display:flex; gap:.6rem; flex-wrap:wrap;">
             <a class="btn primary" :href="registerUrl" target="_blank" rel="noopener">İcmaya qoşul</a>
             <a class="btn ghost" href="#webinars">Yaxın vebinar</a>
+            <a class="btn ghost" href="articles/">Məqalələr</a>
           </div>
         </div>
       </div>
@@ -76,6 +78,8 @@ const toggleFaq = (idx) => {
           <div>
             <h3 style="font-weight:700; margin-bottom:.4rem">Canlı vebinarlar</h3>
             <p class="muted">Mütəxəssislərlə LLM-lər, kompüter görməsi, MLOps və s. mövzularda praktiki sessiyalar.</p>
+            <div class="divider"></div>
+            <a class="btn ghost" href="articles/generativ-ai-prompt.html">Daha çox oxu</a>
           </div>
         </div>
         <div class="card feature">
@@ -83,6 +87,8 @@ const toggleFaq = (idx) => {
           <div>
             <h3 style="font-weight:700; margin-bottom:.4rem">Praktiki kurslar</h3>
             <p class="muted">Layihəyönümlü dərslər və kod laboratoriyaları ilə sıfırdan tətbiqlər qur.</p>
+            <div class="divider"></div>
+            <a class="btn ghost" href="articles/mashin-oyrenmesi-baslanqic.html">Başlama bələdçisi</a>
           </div>
         </div>
         <div class="card feature">
@@ -90,6 +96,8 @@ const toggleFaq = (idx) => {
           <div>
             <h3 style="font-weight:700; margin-bottom:.4rem">İcma və karyera</h3>
             <p class="muted">Networking, mentorluq, açıq mənbə layihələri və karyera dəstəyi.</p>
+            <div class="divider"></div>
+            <a class="btn ghost" href="articles/mlops-nedir.html">MLOps nədir?</a>
           </div>
         </div>
       </div>
@@ -122,16 +130,21 @@ const toggleFaq = (idx) => {
           <p class="muted">İnteraktiv sessiyalar, canlı demo və Q&A.</p>
           <div class="divider"></div>
           <a class="btn ghost" href="#webinars">Yaxın vebinar</a>
+          <a class="btn ghost" href="articles/generativ-ai-prompt.html" style="margin-left:.5rem">Prompt təlimi</a>
         </div>
         <div class="card">
           <span class="kicker">Öyrənmə</span>
           <h3 style="font-weight:700; margin:.3rem 0 .5rem">Kurslar</h3>
           <p class="muted">Mentorluqla layihə əsaslı tədris, portfolio üçün tapşırıqlar.</p>
+          <div class="divider"></div>
+          <a class="btn ghost" href="articles/mashin-oyrenmesi-baslanqic.html">Başlamaq üçün plan</a>
         </div>
         <div class="card">
           <span class="kicker">İcma</span>
           <h3 style="font-weight:700; margin:.3rem 0 .5rem">Görüşlər və layihələr</h3>
           <p class="muted">Onlayn görüşlər, açıq mənbə töhfələri, hackday-lər.</p>
+          <div class="divider"></div>
+          <a class="btn ghost" href="articles/mlops-nedir.html">İstehsalda ML</a>
         </div>
       </div>
     </section>
@@ -159,14 +172,20 @@ const toggleFaq = (idx) => {
         <div class="card">
           <h3 style="font-weight:700; margin-bottom:.4rem">Başlanğıc bələdçisi</h3>
           <p class="muted">Python, Jupyter, əsas ML anlayışları və generativ AI ilə sürətli başlanğıc.</p>
+          <div class="divider"></div>
+          <a class="btn ghost" href="articles/mashin-oyrenmesi-baslanqic.html">Oxu</a>
         </div>
         <div class="card">
           <h3 style="font-weight:700; margin-bottom:.4rem">Tədris planı</h3>
           <p class="muted">LLM-lər, incə tənzimləmə, məlumatların hazırlanması, qiymətləndirmə və yerləşdirmə.</p>
+          <div class="divider"></div>
+          <a class="btn ghost" href="articles/llm-nedir.html">LLM nədir?</a>
         </div>
         <div class="card">
           <h3 style="font-weight:700; margin-bottom:.4rem">İcma qaydaları</h3>
           <p class="muted">Hörmət, inklüzivlik və paylaşım mədəniyyəti. Hər kəs üçün təhlükəsiz məkan.</p>
+          <div class="divider"></div>
+          <a class="btn ghost" href="articles/ai-nedir.html">AI nədir?</a>
         </div>
       </div>
     </section>
@@ -199,7 +218,7 @@ const toggleFaq = (idx) => {
 
     <!-- Footer -->
     <section class="section container center">
-      <p class="muted">© {{ new Date().getFullYear() }} ai.zerbaijan — açıq icma.</p>
+      <p class="muted">© {{ new Date().getFullYear() }} ai.zerbaijan — açıq icma. · <a href="articles/">Məqalələr</a></p>
     </section>
   </main>
 </template>
